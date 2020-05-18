@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jni.JNIActivity">
+    <TextView
+        android:id="@+id/hello_jni"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="hello JNI"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/int_jni"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="传递int返回int"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="@+id/hello_jni"
+        app:layout_constraintLeft_toLeftOf="@+id/hello_jni"
+        app:layout_constraintTop_toBottomOf="@+id/hello_jni"/>
+    <TextView
+        android:id="@+id/string_jni"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="传递string返回string"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="@+id/int_jni"
+        app:layout_constraintLeft_toLeftOf="@+id/int_jni"
+        app:layout_constraintTop_toBottomOf="@+id/int_jni"/>
+    <TextView
+        android:id="@+id/array_jni"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="传递数组返回数组"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="@+id/string_jni"
+        app:layout_constraintLeft_toLeftOf="@+id/string_jni"
+        app:layout_constraintTop_toBottomOf="@+id/string_jni"/>
+
+    <TextView
+        android:id="@+id/callback_void"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="C 调用Java空参数方法"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="@+id/array_jni"
+        app:layout_constraintLeft_toLeftOf="@+id/array_jni"
+        app:layout_constraintTop_toBottomOf="@+id/array_jni"/>
+    <TextView
+        android:id="@+id/callback_int"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="C 调用Java int类型参数方法"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="@+id/callback_void"
+        app:layout_constraintLeft_toLeftOf="@+id/callback_void"
+        app:layout_constraintTop_toBottomOf="@+id/callback_void"/>
+    <TextView
+        android:id="@+id/callback_string"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="C 调用Java String类型参数方法"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="@+id/callback_int"
+        app:layout_constraintLeft_toLeftOf="@+id/callback_int"
+        app:layout_constraintTop_toBottomOf="@+id/callback_int"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

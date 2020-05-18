@@ -1,0 +1,5 @@
+include ':app', ':serviceclient', ':greendao', ':logintest', ':kotlintest'
+rootProject.name='PracticeCollect'
+include ':javapoet'
+include ':andfix'
+include ':tinker'

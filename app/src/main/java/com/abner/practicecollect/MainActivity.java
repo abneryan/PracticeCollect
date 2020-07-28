@@ -15,6 +15,7 @@ import com.abner.practicecollect.EventDispatche.EventDispatchMainActivity;
 import com.abner.practicecollect.handler.HandlerActivity;
 import com.abner.practicecollect.jni.JNIActivity;
 import com.abner.practicecollect.launchMode.LaunchModeMainActivity;
+import com.abner.practicecollect.recyclerView.RecyclerViewActivity;
 import com.abner.practicecollect.service.client.ClientActivity;
 import com.abner.practicecollect.slidingConflict.MainSlidingConflictActivity;
 
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnIte
     private RecyclerView mRecyclerView;
     private static Activity activity;
     private String[] mTitles = new String[]{"Handler","Service","IPC","事件分发机制",
-                                            "JNI","滑动冲突","启动模式","动画"};
+                                            "JNI","滑动冲突","启动模式","动画","RecyclerView"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,6 +123,10 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnIte
             case 6://启动模式
                 Intent launchMode = new Intent(getBaseContext(), LaunchModeMainActivity.class);
                 startActivity(launchMode);
+                break;
+            case 7://RecyclerView
+                Intent recycerViewIntent = new Intent(getBaseContext(), RecyclerViewActivity.class);
+                startActivity(recycerViewIntent);
                 break;
 
             default:

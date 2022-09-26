@@ -5,9 +5,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.example.customview.xfermode.AvatarView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints" />
+   <!--  <com.example.customview.xfermode.AvatarView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         tools:ignore="MissingConstraints" />-->
+    <!--  <com.example.customview.DashboardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>-->
+    <!--<com.example.customview.PieView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+  <!--  <com.example.customview.SportView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+   <!-- <com.example.customview.MultilineTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+    
+    <com.example.customview.CameraView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
 
 </RelativeLayout>

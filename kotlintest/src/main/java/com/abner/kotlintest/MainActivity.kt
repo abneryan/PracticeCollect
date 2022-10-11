@@ -7,22 +7,22 @@ import android.view.View
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
 
+const val TAG = "MainActivity";
+
 class MainActivity : AppCompatActivity() {
 
-    val TAG = "MainActivity";
-    lateinit var testView: TextView;
+    var testView: TextView? = null;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initView();
     }
 
-    fun initView(): Unit {
-        testView = findViewById(R.id.testview);
-        testView.setOnClickListener {
+    fun initView() {
+        //testView = findViewById(R.id.testview);
+        testView!!.setOnClickListener {
             object : View.OnClickListener {
                 override fun onClick(v: View?) {
-                    TODO("Not yet implemented")
 
                 }
 

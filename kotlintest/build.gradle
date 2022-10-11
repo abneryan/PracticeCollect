@@ -15,12 +15,27 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    signingConfigs {
+        release {
+            storeFile file('../kotlintest/key/review_key.jks')
+            storePassword 'msbreview'
+            keyAlias = 'msbreview'
+            keyPassword 'msbreview'
+        }
+        debug {
+            storeFile file('../kotlintest/key/review_key.jks')
+            storePassword 'msbreview'
+            keyAlias = 'msbreview'
+            keyPassword 'msbreview'
+        }
+    }
 
     buildTypes {
         release {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 

@@ -1,0 +1,2 @@
+com/abner/baselib/BuildConfig.java
+ com.abner.baselib.BuildConfig

@@ -19,7 +19,6 @@ class CameraView1(context: Context?, attrs: AttributeSet?) : View(context, attrs
     //存在一个虚拟的三维坐标系
     private var camera = Camera()
 
-
     init {
         //沿X轴翻转
         camera.rotateX(30f)

@@ -17,7 +17,7 @@ class CameraView1(context: Context?, attrs: AttributeSet?) : View(context, attrs
     var paint = Paint(Paint.ANTI_ALIAS_FLAG)
     var bitmap = getAvatar(IMAGE_SIZE.toInt())
     //存在一个虚拟的三维坐标系
-    private var camera = Camera();
+    private var camera = Camera()
 
     init {
         //沿X轴翻转

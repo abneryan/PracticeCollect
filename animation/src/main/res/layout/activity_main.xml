@@ -6,18 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-  <!--  <ImageView
-        android:id="@+id/iv_pic"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/ic_head"/>-->
+    <!--  <ImageView
+          android:id="@+id/iv_pic"
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:src="@drawable/ic_head"/>-->
     <!--<com.anber.animation.CircleView
         android:id="@+id/cv_circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>-->
-  <com.anber.animation.CameraView1
-      android:id="@+id/cv_camera"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content" />
+    <!--  <com.anber.animation.CameraView1
+          android:id="@+id/cv_camera"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />-->
+    <com.anber.animation.ProvinceView
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 
 </LinearLayout>

@@ -20,5 +20,20 @@ class MainActivity : AppCompatActivity() {
 //        objectAnimator.start()
 
         val camera = findViewById<CameraView1>(R.id.cv_camera)
+
+     /*   var topFlipAnimator = ObjectAnimator.ofFloat(camera, "topFlip", 60f)
+        topFlipAnimator.duration = 1500
+        topFlipAnimator.startDelay = 1000
+        topFlipAnimator.start()*/
+
+      /*  var bottomFlipAnimator = ObjectAnimator.ofFloat(camera,"bottomFlip",60f)
+        bottomFlipAnimator.duration =1500
+        bottomFlipAnimator.startDelay =1000
+        bottomFlipAnimator.start()*/
+
+          var flipRotaionAnimator = ObjectAnimator.ofFloat(camera,"flipRotaion",60f)
+        flipRotaionAnimator.duration =1500
+        flipRotaionAnimator.startDelay =1000
+        flipRotaionAnimator.start()
     }
 }

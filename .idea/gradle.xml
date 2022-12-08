@@ -7,7 +7,7 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleJvm" value="11" />
+        <option name="gradleJvm" value="corretto-11" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/animation" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/customview" />
+            <option value="$PROJECT_DIR$/customviewlayout" />
             <option value="$PROJECT_DIR$/drawable" />
             <option value="$PROJECT_DIR$/greendao" />
             <option value="$PROJECT_DIR$/javapoet" />
@@ -24,6 +25,7 @@
             <option value="$PROJECT_DIR$/tinker" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

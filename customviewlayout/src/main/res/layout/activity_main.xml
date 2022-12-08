@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+   <!-- <com.anber.customviewlayout.view.SquareImageView
+        android:layout_width="240dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_head"
+        tools:ignore="MissingConstraints" />-->
+
+    <com.anber.customviewlayout.view.CircleView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@color/colorAccent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
